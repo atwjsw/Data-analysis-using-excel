@@ -1,0 +1,100 @@
+3 数据展现
+
+- 数据展现：用图表说话，将分析结果用合适的图形或表格展示给读者或听众，让读者或听众更容易理解要表达的观点。用合适的图形和表格来展现观点。
+- 常用图表：饼图、条形图、柱形图、折线图、散点图
+- 饼图：表达成分
+- 条形图： 排序，相关
+- 柱形图：排序、趋势、分布
+- 折线图：趋势，分布
+- 散点图：相关
+
+首选
+- 成分：饼图
+- 排序：柱状图，如果标签过长可以用条形图
+- 分布：柱形图
+- 趋势：折线图
+- 相关：散点图
+
+选取数据区域 - Insert - 点击相应图表。
+
+3.2 双坐标图
+- 数据系列为两个或两个以上时，并且单位不同，或者数据量级差别较大时，可以使用双坐标轴图
+
+1. 生成柱状图：选取三列数据-Insert-点击柱状图-于留存率数值太小显示不出来。
+2. 先复制留存率的数据，粘贴到其他单元格 - 复制新增用户数的数据，粘贴到留存率的单元格 - 此时就可以看到留存率数据系列的柱图 - 右键点击留存率系列 - Format Data Series - Secondary Axis - 出现次坐标轴 - 把复制出来的留存率复制回去 - 次坐标轴的单位就对应留存率的值了 - 右键点击留存率系列 - change serie chart type - Line with markers - 双坐标轴图完成
+3. 美化：点击网格线-Delete删除-图形拉大-标签字体缩小，让其横着显示 - 或者Text Options - 文本框 - Text direction - Vertical - 字体调成微软雅黑 - 加粗。
+
+3.3 目标完成率图
+- 反映业务目标完成的情况
+
+- 选取三列数据-Insert-柱状图 - 点击目标值系列 - Series Options - Fill and line - 去除填充色 - Border - Solid Line - Color black 0 - Width 1.5pt
+- 右键点击完成值系列- 选择Secondary Axis - 此时两个系列重叠起来了
+- 点击目标值系列 - Series Options - Gap Width - 将间距调小一点 - 这样目标值就比完成值宽了。
+- 点击左侧坐标轴 - Format Axis - Text Options - 把Maximin调成跟又坐标轴一致，这样完成值就可以超过目标值突出来了。
+- 美化： 点击-Delete网格线 - 删除次坐标轴标签
+- 右键点击完成值系列- Add Data Label - Label Options - value From cells - 选取完成率数据区域 - Label Position - Center
+
+3.4 雷达图
+- 什么时候需要使用雷达图？
+- 柱形图的数据系列超过两个时就不直观，此时可以改用雷达图
+- 选取数据区域 - Insert - 雷达图
+- 优化：按照开心网数据进行排序 - Insert - 雷达图 - 此时数据是从大到小排列的
+
+3.5 矩阵图
+1. 点击数据区域（不要选取标签列和字段行）- Insert - 散点图（矩阵图是基于散点图的）- 删除网格线
+2. 点击横竖坐标轴，Axis Option - Vertical（horizontal） axis cross - Axis values（选取两个序列的平均值）- 两个坐标轴交叉于平均值点。
+3. 添加数据序列标签 - 点击数据点 - Add Data Labels - 点击Data Label - Label options - Value from cells - 选取标签数据列 - Label Position- Above
+4. 添加箭头： - Shapes - 按Shift可以保持水平
+5. 添加信息：Insert - Text Box - Ctrl+Shift可以拷贝并拖动一个文本框
+
+3.6 漏斗图
+- 是对业务流程最直观的一种表现形式，通过漏斗图可以很快发现存在问题的流程环节
+- 漏斗图是在条形图基础上绘制，主要使用的是堆积条形图
+
+- 先要生成占位数据系列 （A-B）/2
+- 选取标签、转换率、填充数据系列 - 点击Insert - Stacked Bar Chart 
+- 点击坐标轴格式 - Axis Option - Category Reverse - 数字序列调转
+- 点击数据区域 - Select Data - 把数据序列位置倒换 - 让占位数据靠左 - 取消占位数据填充色 - 删除图例
+- 点击菜单Add Chart Element-Line-Series Line
+
+3.7 旋风图
+- 作用1：用于两个数据序列不同指标或者不同项目之间的对比
+- 作用2：表示两个数据之间的相关关系
+- 基于Bar chart
+
+1. 选取指标、公司A、公司B数据区域 - Insert - Bar Chart
+2. 右键点击公司A数据序列 - Format Data Series - Series option - Secondary Axis - 公司A和公司B数据序列重叠起来 - 图上部出现Secondary Axis
+3. 把两个Axis坐标最大最小值均改为-100，100：点击坐标轴数字 - Axis Option - Bounds - Minimum -100, Maximum 100
+4. 点击上面的Axis的数字 - Axis option - Values in reverse order - 公司A序列反转 - 落到轴左边
+5. 点击指标标签 - Axis option - Labels - label position - Low
+6. 点击下面轴标签 - Axis option - Number - Category - Custom - Type - 0;0;0 - 轴标签的符号消除
+7. 美化：Delete图上部的轴标签 - 点击数据序列-Add Data Labels添加数轴标签
+
+3.8 帕累托图
+- 也成为排列图、主次图， 用于质量分析、原因定位等，原理就是帕累托原则。即2/8原则
+
+1. 先绘制直方图：点击原因和问题数区域
+Insert - 柱状图 - 点击原因序列 - Format Data Series - Series Options - Gap width调成0 - 柱子就靠在一起了 - 点击问题数轴 - Format Axis - Axis Option - Bounds - Maximun改为1000
+
+2. 添加百分比折线图
+右键点击图表区域 - Select Data - Add - Series Name累计百分比 - Series Values 累计百分比数组区域 - OK - 通过左右键遍历图标元素，选取累计百分比（由于其坐标z值太小，显示不出来） - Format Data Series - Secondary Axis - 此时累计百分比显示为柱状图 - 右键点击累计百分比 - Change Series Chart Type - 选择折线图 
+- 点击右侧标签 - Axis Option - Bounds - Maximum 1.0 
+- 点击Add Chart Element - Axis - Secondary Horizontal - 点击Secondary Axis - Axis Option - Axis position -  On tick marks - Labels - Label Position - None
+- 美化：点击两边Axis - Axis Option - Fill and Line - Line - solid line - 添加轴实线; Axis option - Tick Marks - Major - Ouside - 添加刻度线
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
