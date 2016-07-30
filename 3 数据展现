@@ -82,6 +82,41 @@ Insert - 柱状图 - 点击原因序列 - Format Data Series - Series Options - 
 - 点击Add Chart Element - Axis - Secondary Horizontal - 点击Secondary Axis - Axis Option - Axis position -  On tick marks - Labels - Label Position - None
 - 美化：点击两边Axis - Axis Option - Fill and Line - Line - solid line - 添加轴实线; Axis option - Tick Marks - Major - Ouside - 添加刻度线
 
+3.9 迷你图
+- 快速查看数据趋势或者分布，不需要绘制出折线图和柱形图。特别是数据系列比较多时，绘制在一个图表中规律就没有那么明显
+- 迷你图2010版以上才有此功能
+- 色阶、图表级在2007版以上就有
+
+- 迷你图： 选取数据序列 - Insert - sparklines - 选取单元格 - OK - 也可以选取柱状图
+- 数据条图：选取2004数据区域 - Home - Conditional Formating - Data Bar - Solid Fill
+- 色阶图：选取2004数据区域 - Home - Conditional Formating - Color Scales
+- 图标集：选取2004数据区域 - Home - Conditional Formating - icon sets - 改变规则 - 选取icon sets范围 - Conditional Formating - manage rules - Edit rules - 绿色icon > 20000, 黄色icon > 10000
+
+3.10 图表美化
+
+技巧
+1.字体统一
+- 统一字体大小、颜色、字体本身（如微软雅黑）
+2. 排版简洁
+- 最大化数据墨水比原则。即保留有效元素,去除无效元素,淡化次要元素.
+3. 配色协调
+- 颜色不要超过三种,如果配色没把握,则选择单色
+
+案例:
+
+- 去掉图表边框：点击边框 - Format chart area - border - No line
+- 图例上移：点击图例 - format legends - legend options - legend position - top
+- fill and line - line - no line
+- 调整布局：图拉宽拉长
+- 更改字体：点击图例 - Home - 字体框 - 微碳软雅黑 - 颜色用灰色（黑色太突出）
+- 取消背景色和网格线（无效元素）：点击画图区域 - format plot area - plot area options - fill - no fill - 点击网格线delete - border - no line
+- 更改柱形图颜色和边框： 点击柱形图 —— format data series - series options - fill - color - border - solid line - color - 白色
+- 纵坐标轴颜色及字体、刻度：点击横坐标轴 - fill and line - line - solid line - color - 灰色 - axis options - tick marks - none - 字体直接在菜单字体框改
+- 横坐标轴：tick marks - outside
+- 添加数据标签： 点击数据序列 - add data labels - 点击数据标签 - 在字体框中调整字体大小，格式，颜色
+
+
+
 
 
 
